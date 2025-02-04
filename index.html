@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Services</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Certificate</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Hi! I'm <span class="stylized-name">SAHIL KUMAR(Developer)</span>,</h1>
+                        <h2>A <span class="professions" id="profession"></span></h2>
+                        <p class="heroline">I'm a skilled web developer passionate about building high-quality websites
+                            and applications. I'm proficient in technologies like
+                            <span class="highlight">HTML</span>,
+                            <span class="highlight">CSS</span>,
+                            <span class="highlight">JavaScript</span>,
+                            <span class="highlight">Core Java</span>,
+                            <span class="highlight">MERN Stack</span> and
+                            <span class="highlight">Python (basic)</span>, always learning and solving problems to
+                            enhance my skills.
+                        </p>
+                        <div class="buttonGroup"><button>Hire Me</button><button onclick="Navigate(4)">Contact
+                                Me</button></div>
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="Self.jpg" alt="">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                    <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h1 class="heading">About Me</h1>
+                        <h3 class="sub-heading">I'm SAHIL, <span class="proffesions" id="flip-container"></span></h3>
+                        <p class="aboutme-deatils">
+                        </p>
+                        <div class="about-me-divison">
+                            <div class="about-me-table">
+                                <li><span>Experience:</span> Begineer</li>
+                                <li><span>Country:</span> India</li>
+                                <li><span>Avability:</span> 24/7 </li>
+                                <li><span>Age</span>:21+</li>
+                                <li><span>Phone</span>:916-223-1102</li>
+                                <li><span>Language Used:</span>HTML</li>
+                                <li><span>Degree</span>:Computer Engineering</li>
+                                <div class="buttonGroup">
+                                    <button>Hire Me</button>
+                                    <button onclick="Navigate(4)">Contact Me</button>
+                                </div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:99%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:80%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:85%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Python</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:50%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Core Java</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:75%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>MERN</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:70%"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services">
+
+                    <h1 class="heading">Services</h1>
+                    <div class="service-box">
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                            <h2>Mern Stack Developer</h2>
+                            <p>Developing dynamic websites using MERN Stack technology.</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                            <h2>Web Development</h2>
+                            <p>Developing websites using Htnl, Css, Jscript or MERN Stack.</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <h2>SQL</h2>
+                            <p>Using SQL language for inserting data in Database.</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-image"></i></div>
+                            <h2>Java Developer</h2>
+                            <p>Making application using Jsp , Servelet in java.</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <h2>Software Developer</h2>
+                            <p>Developing Softwares according to projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide gallery">
+                    <h1 class="heading">Certificate</h1>
+                    <div class="project"><img src="Certificate/AWS.jpg" alt="AWS Certificate" width="300" height="400">
+                    </div>
+                    <div class="project"><img src="Certificate/CCNA.jpg" alt="CCNA Certificate" width="300"
+                            height="400"></div>
+                    <div class="project"><img src="Certificate/Cyber_Security.jpg" alt="Cyber Security Certificate"
+                            width="300" height="400"></div>
+                    <div class="project"><img src="Certificate/DBMS.jpg" alt="DBMS Certificate" width="300"
+                            height="400"></div>
+                    <div class="project"><img src="Certificate/Postman.jpg" alt="Postman Certificate" width="300"
+                            height="400"></div>
+                    <div class="project"><img src="Certificate/Python.jpg" alt="Python Certificate" width="300"
+                            height="400"></div>
+                </div>
+
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="cnt">
+                        <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                            <h3>Mobile No</h3>
+                            <p>916-223-1102</p>
+                        </div>
+                        <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                            <h3>Location</h3>
+                            <p>Currently in Rajkot</p>
+                        </div>
+                        <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>sahilkumar952558@gmail.com</p>
+                        </div>
+                    </div>
+                    <form id="contact-form">
+                        <h2>Send Me A Message <div class="SocialLinks">
+                                <a href="https://leetcode.com/u/Sahil_kumar95/" target="_blank">
+                                    <i class="fa-solid fa-code" title="LeetCode"></i>
+                                </a>
+                                <a href="https://github.com/Swartz9525/" target="_blank">
+                                    <i class="fa-brands fa-github" title="GitHub"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sahil-kumar-a7873a259/" target="_blank">
+                                    <i class="fa-brands fa-linkedin" title="LinkedIn"></i>
+                                </a>
+                                <a href="https://www.geeksforgeeks.org/user/sahilkumar39s/" target="_blank">
+                                    <i class="fa-solid fa-graduation-cap" title="GeeksforGeeks"></i>
+                                </a>
+                            </div>
+
+                        </h2>
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="message" rows="10" placeholder="Type your Message Here..." required></textarea>
+                        <button class="primary" type="button" id="sendButton">Send</button>
+
+                    </form>
+                    <footer>
+                        <li>Copyright © 2024 @sahil.</li>
+                    </footer>
+                </div>
+            </div>
+    </main>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js'></script>
+    <script src="./script.js"></script>
+    <script>
+        document.getElementById('sendButton').addEventListener('click', () => {
+            const recipient = "sahilkumar952558@gmail.com"; // Replace with recipient email
+            const subject = "Hello!"; // Replace with your subject
+            const body = ""; // Get the value from the textarea
+
+            // Open default mail client with pre-filled details
+            window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+
+
+</body>
+
+</html>
